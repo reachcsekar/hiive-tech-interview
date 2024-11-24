@@ -7,6 +7,8 @@ test.beforeEach(async ({ homePage }) => {
     homePage.goTo();
 });
 
+// Data parametrization to cover all te possible location values. 
+// Local location will be skipped as a record is created when app is launched.
 [
     { label: 'EST', location: 'Eastern Standard Time', city: 'New_York' },
     { label: 'PST', location: 'Pacific Standard Time', city: 'Los_Angeles' },
